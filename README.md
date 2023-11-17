@@ -4,4 +4,5 @@ This repository is the implementation of our rational resource allocation decisi
 GeniGraph: Genetic-based Novel Security Resource Allocation Method in Interdependent Systems Modeled by Attack Graphs
 
 GeniGrap_F1 refers to first fitness function
+
 GeniGrap_F2 refers to second fitness function
