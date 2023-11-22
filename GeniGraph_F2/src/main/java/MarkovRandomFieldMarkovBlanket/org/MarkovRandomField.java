@@ -29,13 +29,15 @@ public class MarkovRandomField {
      * This method is used to compute the MRF and display the covered edges
      */
     public void showMarkovBlanket() {
-        System.out.println("Markove Blanket for the given node : " + distinationNode_ID + " includes these edges : ");
+       System.out.println("Markove Blanket for the given node : " + distinationNode_ID + " includes these edges :");
+        System.out.print("[");
         for (int i = 0 ; i < AdjMat[distinationNode_ID - 1].length; i++) {
             if (AdjMat[distinationNode_ID - 1][i] > 0) {
-                System.out.println(distinationNode_ID + " ---------> " + (i + 1));
+                System.out.print(distinationNode_ID + " ---------> " + (i + 1) + ", ");
                 markovBlankedNodes.add(i + 1);
             }
         }
+        System.out.println("\b\b]");
     }
 
     /**
