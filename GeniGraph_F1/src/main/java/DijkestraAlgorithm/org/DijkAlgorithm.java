@@ -31,25 +31,21 @@ public class DijkAlgorithm {
      * @return The path of the lowest cost (based on weight)
      */
     public List<Integer> DijkestraResult(int start, int end) {
-        if (adjMatrix[0].length < end) {
-            throw new IllegalStateException("No node matchs the end node");
-        }
-        SingleGraph graph = new SingleGraph("graph");
+        DefaultUndirectedWeightedGraph<Integer, DefaultWeightedEdge> graph = new DefaultUndirectedWeightedGraph<>(DefaultWeightedEdge.class);
         double[][] Data = this.adjMatrix;
         for (int node = 0; node < Data[0].length; node++) {
-            graph.addNode(node + "");
+            graph.addVertex(node);
         }
         for (int node = 0; node < Data.length; node++) {
             for (int nod = 0; nod < Data[0].length; nod++) {
                 if (Data[node][nod] > 0) {
-                    graph.addEdge(node + "" + new Random().nextDouble(Integer.MAX_VALUE) + nod, node, nod, true).setAttribute("cost", Data[node][nod]);
+                    graph.addEdge(node, nod);
+                    graph.setEdgeWeight(node, nod, Data[node][nod]);
                 }
             }
         }
-        Dijkstra dijkstra = new Dijkstra(Dijkstra.Element.EDGE, null, "cost");
-        dijkstra.init(graph);
-        dijkstra.setSource(graph.getNode(start - 1 + ""));
-        dijkstra.compute();
-        return new ArrayList<>(dijkstra.getPath(graph.getNode(end - 1 + "")).nodes().toList().stream().map(x -> Integer.parseInt(x.toString()) + 1).toList());
+        DijkstraShortestPath<Integer, DefaultWeightedEdge> dijkstraShortestPath = new DijkstraShortestPath<>(graph);
+        List<Integer> nodes = dijkstraShortestPath.getPath(start - 1, end - 1).getVertexList();
+        return nodes.stream().map(i -> i + 1).toList();
     }
 }
