@@ -28,7 +28,7 @@ public class DijkAlgorithm {
      * @return The path of the lowest cost (based on weight)
      */
     public List<Integer> DijkestraResult(int start, int end) {
-       DefaultUndirectedWeightedGraph<Integer, DefaultWeightedEdge> graph = new DefaultUndirectedWeightedGraph<>(DefaultWeightedEdge.class);
+        DefaultUndirectedWeightedGraph<Integer, DefaultWeightedEdge> graph = new DefaultUndirectedWeightedGraph<>(DefaultWeightedEdge.class);
         double[][] Data = this.adjMatrix;
         for (int node = 0; node < Data[0].length; node++) {
             graph.addVertex(node);
