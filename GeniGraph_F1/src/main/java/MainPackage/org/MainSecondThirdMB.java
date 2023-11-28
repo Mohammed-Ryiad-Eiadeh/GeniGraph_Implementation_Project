@@ -92,6 +92,8 @@ class MainSecondThirdMB {
         var MB = new MarkovRandomField(AdjMat, assetNode);
         MB.showMarkovBlanket();
         var MBNodes = MB.retrieveNodeOfBlanket();
+        System.out.println("Markove Blanket for the given node : " + assetNode + " includes these edges :");
+        MBNodes.forEach(System.out::println);
 
         System.out.println("\nPlease type the number of paths");
         var numOfAttackers = Math.min(new Scanner(System.in).nextInt(), k);
