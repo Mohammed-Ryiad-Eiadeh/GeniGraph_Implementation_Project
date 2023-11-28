@@ -77,6 +77,8 @@ class MainFirstMB {
         var MB = new MarkovRandomField(AdjMat, assetNode);
         MB.showMarkovBlanket();
         var MBNodes = MB.retrieveNodeOfBlanket();
+        System.out.println("Markove Blanket for the given node : " + assetNode + " includes these edges :");
+        MBNodes.forEach(System.out::println);
 
         var B1 = Defenders.spareBudget_D1 / MBNodes.size();
         var B2 = Defenders.spareBudget_D2 / MBNodes.size();
