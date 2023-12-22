@@ -62,4 +62,18 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 | Behavioral Defender | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | Directed |
 | GeniGraph | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | Bidirectional |
 
+# Datasets We Used In Our Work
+| System | # Nodes | # Edges | # Critical Assets | $v_s$ / $v_m$ | Graph Type | run-time $F_1$ | run-time $F_2$ |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| SCADA | 13 | 20 | 6 | 1 / 13 | Bidirectional | 4921 | 5858 |
+| DER.1 | 22 | 32 | 6 | 1 / 22 | Bidirectional | 8780 | 16389 |
+| E-Commerce | 20 | 32 | 4 | 1 / 20 | Bidirectional | 10256 | 17902 |
+| VOIP | 22 | 35 | 4 | 1 / 22 | Bidirectional | 11810 | 22046 |
+| HG1 | 7 | 10 | 2 | 1 / 7 | Bidirectional | 3347 | 4749 |
+| HG2 | 15 | 42 | 5 | 1 / 12 | Bidirectional | 5436 | 6560 |
+| ABSNP | 17 | 122 | 6 | 1 / 17 | Bidirectional | 8107 | 6811 |
+| ASFS3 | 27 | 163 | 9 | 1 / 27 | Bidirectional | 11998 | 27400 |
+| ASS2009 | 31 | 211 | 9 | 1 / 31 | Bidirectional | 17404 | 32746 |
+| AWS03 | 42 | 152 | 15 | 1 / 42 | Bidirectional | 12218 | 39465 |
+
 
