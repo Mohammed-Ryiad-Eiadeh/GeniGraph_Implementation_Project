@@ -130,3 +130,5 @@ The row "Measurements" show the relative difference $RD$ of the fitness score co
 | AWS03 | 67.289 / 29.516 | 67.534 / 0 | 888 / 0.254 | 67.169 / 21.417 | 52.763 / 42.068 |
 | Sum of Ranks | 38 | 30.5 | 12 | 29 | 40.5 |
 
+Note: much more experiments are conducted and illustrated in the paper, hence, read the paper carefully.
+
