@@ -137,6 +137,9 @@ This work introduces an efficient defense strategy for securing interdependent s
 
 We assessed our approaches under various parameters, security budgets, and concurrent attacks. We tested them on five real-world interdependent systems and five attack graph datasets. Our experiments suggest that our approach can enhance the security level of interdependent systems and serve as a good alternative to existing resource allocation approaches. Our open-source implementation follows object-oriented programming principles, making it easy for researchers to conduct their own experiments and modify our approaches as needed.
 
+# How To Run The Code (read carefully please)
+1) 
+
 # References
 1) [1] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
 2) [2] R. Lippmann, K. Ingols, C. Scott, K. Piwowarski, K. Kratkiewicz, M. Artz, and R. Cunningham. 2006. Validating and restoring defense in depth using attack graphs. In IEEE Military Communications Conference. IEEE, 1–10.
