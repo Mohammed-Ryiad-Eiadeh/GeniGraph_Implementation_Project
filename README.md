@@ -80,7 +80,7 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 The following parameters were used: maximum iteration ($M=2000$), population size (set of potential attack paths) ($N=2000$), mutation probability ($m_p=0.2$), mutation rate ($m_r=0.2$), and weight factor ($Wf=0.001$). The available security budgets for the defenders were $S_1=1$, $S_2=0.75$, and $S_3=0.5$. We underscore that our proposed defense strategies are effective regardless of the security budget, as demonstrated in our evaluation experiments. For the behavioral defender, the behavioral level ($a$) was set to 0.5. All experiments were performed using Java language (JDK 17) on a machine equipped with an Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz (12 CPUs), and 16384MB RAM.
 
 # Comparison of GeniGraph and baseline systems on all datasets
-The row ``Measurements" show the relative difference $RD$ of the fitness score corresponding to fitness function $F_1$, and the relative difference of the expected cost $CR$ for all defense scenarios. The larger $RD$ and $CR$, the better the defense method with significance level equals 0.05 for the Friedman test.
+The row "Measurements" show the relative difference $RD$ of the fitness score corresponding to fitness function $F_1$, and the relative difference of the expected cost $CR$ for all defense scenarios. The larger $RD$ and $CR$, the better the defense method with significance level equals 0.05 for the Friedman test.
 
 1) Top-1 attack path.
    
@@ -97,3 +97,20 @@ The row ``Measurements" show the relative difference $RD$ of the fitness score c
 | ASS2009 | 89.460 / 52.763 | 89.460 / 34.357 | 1.394 / 0.467 | 86.466 / 46.930 | 43.021 / 18.705 |
 | AWS03 | 89.460 / 52.76 | 67.534 / 0 | 0.762 / 0.254 | 86.466 / 39.346 | 52.763 / 52.763 |
 | Sum of Ranks | 44 | 26.5 | 12 | 34 | 33.5 |
+
+2) Top-K defence.
+
+| System | GeniGraph | Min-cut | Equally Distributed | Behavioral Defender | GeniGraph (MRF) |
+| --- | --- | --- | --- | --- | --- |
+| SCADA | 43.021 / 24.516 | 36.237 / 27.222 | 5.186 / 2.627 | 40.206 / 22.893 | 36.237 / 27.222 |
+| DER.1 | 63.725 / 13.986 | 67.534 / 19.357 | 6.734 / 0.925 | 63.643 / 13.929 | 67.534 / 28.597 |
+| E-Commerce } | 75.386 / 13.023 | 67.534 / 0 | 6.527 / 1.118 | 73.747 / 10.984 | 43.021 / 43.021 |
+| VOIP | 79.502 / 23.795 | 89.460 / 82.318 | 6.951 / 0.925 | 72.608 / 23.981 | 89.460 / 82.318 |
+| HG1 | 43.021 / 24.516 | 36.237 / 32.119 | 16.779 / 8.774 | 40.206 / 22.081 | 36.237 / 32.119 |
+| HG2 | 56.387 / 18.951 | 43.021 / 10.755 | 5.347 / 1.980 | 53.835 / 16.603 | 36.237 / 30.801 |
+| ABSNP | 43.021 / 29.142 | 13.118 / 13.118 | 2.685 / 1.545 | 40.986 / 26.170 | 13.118 / 10.909 |
+| ASFS3 | 43.021 / 29.142 | 18.498 / 11.524 | 1.074 / 0.615 | 40.986 / 26.617 | 18.498 / 15.254 |
+| ASS2009 | 73.642 / 34.875 | 89.460 / 30.944 | 1.740 / 0.467 | 69.664 / 28.959 | 43.021 / 16.846 |
+| AWS03 | 72.629 / 25.364 | 67.534 / 0 | 0.888 / 0.254 | 67.169 / 21.417 | 52.763 / 42.068 |
+| Sum of Ranks | 38 | 30.5 | 12 | 29 | 40.5 |
+
