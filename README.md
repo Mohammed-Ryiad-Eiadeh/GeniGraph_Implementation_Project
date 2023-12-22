@@ -76,4 +76,5 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 | ASS2009 | 31 | 211 | 9 | 1 / 31 | Bidirectional | 17404 | 32746 |
 | AWS03 | 42 | 152 | 15 | 1 / 42 | Bidirectional | 12218 | 39465 |
 
-
+# Parameter Configuration of Our Experiments
+The following parameters were used: maximum iteration ($M=2000$), population size (set of potential attack paths) ($N=2000$), mutation probability ($m_p=0.2$), mutation rate ($m_r=0.2$), and weight factor ($Wf=0.001$). The available security budgets for the defenders were $S_1=1$, $S_2=0.75$, and $S_3=0.5$. We underscore that our proposed defense strategies are effective regardless of the security budget, as demonstrated in our evaluation experiments. For the behavioral defender, the behavioral level ($a$) was set to 0.5. All experiments were performed using Java language (JDK 17) on a machine equipped with an Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz (12 CPUs), and 16384MB RAM.
