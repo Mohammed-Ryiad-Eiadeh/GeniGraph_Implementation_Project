@@ -54,12 +54,12 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 # Differencess Among our Model and Existed Ones. 
 | System | Multiple Defenders | Interdependent Subnetworks | Analytical Framework | Behavioral Biases | Various Attack Types | Multiple Rounds | Top Attack Paths | Graph Type |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| RAID08 [1], MILCOM06 | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | Directed |
-| S&P02, CCS12 | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | Directed |
-| S&P09, EC18, ACSAC12 | ❌ | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | Directed |
-| ICC17 | ❌ | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | Directed |
-| TCNS20, TCNS18 | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | Directed |
-| Behavioral Defender | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | Directed |
+| RAID08 [1], MILCOM06 [2] | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | Directed |
+| S&P02 [3], CCS12 [4] | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | Directed |
+| S&P09 [5], EC18 [6], ACSAC12 [7] | ❌ | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | Directed |
+| ICC17 [8] | ❌ | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | Directed |
+| TCNS20 [9], TCNS18 [10] | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | Directed |
+| Behavioral Defender [11] | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | Directed |
 | GeniGraph | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | Bidirectional |
 
 # Datasets We Used In Our Work
@@ -139,5 +139,14 @@ We assessed our approaches under various parameters, security budgets, and concu
 
 # References
 1) [1] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
-2) 
+2) [2] R. Lippmann, K. Ingols, C. Scott, K. Piwowarski, K. Kratkiewicz, M. Artz, and R. Cunningham. 2006. Validating and restoring defense in depth using attack graphs. In IEEE Military Communications Conference. IEEE, 1–10.
+3) [3] O. Sheyner, J. Haines, S. Jha, R. Lippmann, and J. M. Wing. 2002. Automated generation and analysis of attack graphs. In Proceedings 2002 IEEE Symposium on Security and Privacy. IEEE, 273–284.
+4) [4] G. Yan, R. Lee, A. Kent, and D. Wolpert. 2012. Towards a bayesian network game framework for evaluating DDoS attacks and defense. In Proceedings of the 2012 ACM conference on Computer and communications security (CCS). 553–566.
+5) [5] A. Acquisti. 2009. Nudging privacy: The behavioral economics of personal information. IEEE security & privacy 7, 6 (2009).
+6) [6] E. M. Redmiles, M. L. Mazurek, and J. P. Dickerson. 2018. Dancing pigs or externalities?: Measuring the rationality of security decisions. In Proceedings of the 2018 ACM Conference on Economics and Computation. ACM, 215–232.
+7) [7] R. Anderson. 2012. Security economics: a personal perspective. In Proceedings of the 28th Annual Computer Security Applications Conference. ACM, 139–144.
+8) [8] A. Sanjab, W. Saad, and T. Başar. 2017. Prospect theory for enhanced cyber-physical security of drone delivery systems: A network interdiction game. In Communications (ICC), 2017 IEEE International Conference on. IEEE, 1–6.
+9) [9] Mustafa Abdallah, Parinaz Naghizadeh, Ashish R. Hota, Timothy Cason, Saurabh Bagchi, and Shreyas Sundaram. 2020. Behavioral and Game-Theoretic Security Investments in Interdependent Systems Modeled by Attack Graphs. IEEE Transactions on Control of Network Systems 7, 4 (2020), 1585–1596. https: //doi.org/10.1109/TCNS.2020.2988007 arXiv:2001.03213.
+10) [10] A. R. Hota and S. Sundaram. 2018. Interdependent Security Games on Networks Under Behavioral Probability Weighting. IEEE Transactions on Control of Network Systems 5, 1 (March 2018), 262–273. https://doi.org/10.1109/TCNS.2016.2600484.
+11) [11] M. Abdallah, D. Woods, P. Naghizadeh, I. Khalil, T. Cason, S. undaram, and S. Bagchi. 2021. Morshed: Guiding behavioral decision-makers towards better security investment in interdependent systems. In Proceedings of the 2021 ACM Asia Conference on Computer and Communications Security. 378–392.
 
