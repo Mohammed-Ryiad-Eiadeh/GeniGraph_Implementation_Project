@@ -82,7 +82,7 @@ The following parameters were used: maximum iteration ($M=2000$), population siz
 # ssssssssssssssss
 | System | GeniGraph | Min-cut | Equally Distributed | Behavioral Defender | GeniGraph (MRF) |
 | --- | --- | --- | --- | --- | --- |
-| --- | --- | Weighted Top-K Defense | --- | --- |
+Weighted Top-K Defense
 | SCADA | 89.460 / 67.534 | 36.237 / 36.237 | 5.186 / 2.627 | 86.466 / 58.313 | 36.237 / 36.237 |
 | DER.1 | 89.460 / 27.488 | 67.534 / 34.931 | 6.300 / 0.925 | 88.268 / 25.330 | 67.534 / 34.931 |
 | E-Commerce | 89.460 / 31.271 | 67.534 / 0 | 6.527 / 1.118 | 86.466 / 22.119 | 43.021 / 43.021 |
