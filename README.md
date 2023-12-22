@@ -15,6 +15,13 @@ We demonstrate that our proposed framework leads to better resource allocations 
 # Fitness Function
 1) $F_1(P)= \max_{P \in P_m} \big(\exp\big(-\sum_{(v_i,v_j)\in P} {x_{i,j}}\big)\big).$
 2) $F_2(P) = \max_{P \in P_m} \big(\exp\big(-\sum_{(v_i,v_j)\in P} {x_{i,j}}\big) + Wf\sum_{v_m\in P} L_m\big), $
+   
+1) $P$ is the given attack path.
+2) $P_m$ is a set of attack paths.
+3) $v_i,v_j$ are the nodes in $P$.
+4) $L_m$ is the loss corresponding to node $v_m$
+   
+First function cares only about the initial investments of the path $P$. On the other hand, second function accounts for the total asset loss that the system will loos if the attack is occured successfully.
 
 # Cyber Attack Graph Example with Assets and Entry Nodes With Three Defenders to Allocate Resourcess.
 ![General_interdependent_network_legend](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e0eda941-decf-4d34-b3aa-cd9073e06dc7)
