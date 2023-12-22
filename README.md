@@ -18,3 +18,45 @@ We demonstrate that our proposed framework leads to better resource allocations 
 3) We use a genetic algorithm to generate potential paths from the attacker’s entry node to the target, proposing two fitness functions. The first considers edge weights, while the second also accounts for estimated financial loss.
 4) We evaluate our defense methods on ten attack graphs and compare the performance of three popular resource allocation methods.
 5) We implement our framework in Java, using object-oriented programming and reliable libraries for graph-theoretic algorithms.
+
+\label{tbl:morshed_related_work}
+\centering
+\resizebox{0.8\linewidth}{!}
+{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\text{\bf System}}
+& \multicolumn{1}{l|}{\bf \shortstack{Multiple \\ Defenders}}
+& \multicolumn{1}{l|}{\bf \shortstack{Interdependent \\ Subnetworks}}
+& \multicolumn{1}{l|}{\bf \shortstack{Analytical \\ Framework}}
+& \multicolumn{1}{l|}{\bf \shortstack{Behavioral \\ Biases}}
+& \multicolumn{1}{l|}{\bf \shortstack{Various Attack \\ Types}}
+%& \multicolumn{1}{l|}{\bf \shortstack{Incomplete \\ Information}}
+& \multicolumn{1}{l|}{\bf \shortstack{Multiple \\ Rounds}}
+& \multicolumn{1}{l|}{\bf \shortstack{Top  \\ Attack Paths}}
+& \multicolumn{1}{l|}{\bf \shortstack{Graph \\ Type}}\\
+\cline{1-7}
+%\hline
+%\multicolumn{5}{|l|}{\bf type} \\  
+% \\ \cite{sheyner2002automated} 
+\hline
+RAID08~\cite{modelo2008determining}, MILCOM06~\cite{lippmann2006validating} & \xmark  & \checkmark & \xmark & \xmark  & \xmark & \xmark &  \xmark & Directed\\
+\hline
+%CICS~\cite{bedi2011game}
+S\&P02~\cite{sheyner2002automated},  CCS12~\cite{yan2012towards}  & \xmark & \xmark & \checkmark & \xmark & \xmark  & \xmark & \xmark & Directed\\
+\hline
+S\&P09~\cite{acquisti2009nudging}, EC18~\cite{redmiles2018dancing}, ACSAC12~\cite{anderson2012security} & \xmark & \xmark & \xmark & \checkmark & \xmark & \xmark & \xmark & Directed\\  
+\hline
+ICC17~\cite{sanjab2017prospect} & \xmark  & \checkmark  &  \checkmark & \checkmark & \xmark & \xmark & \xmark & Directed\\
+%\hline
+%IFIP18~\cite{gutierrez2018hypergame}  & \xmark  & \xmark  &  \checkmark & \checkmark & \checkmark & \xmark \\
+\hline
+TCNS20~\cite{Abdallah2020}, TCNS18~\cite{7544460} & \checkmark & \checkmark & \checkmark & \checkmark & \xmark & \xmark & \xmark  & Directed\\
+\hline
+Behavioral Defender\cite{abdallah2021morshed} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \xmark & Directed\\
+\hline
+\name & \checkmark & \checkmark & \checkmark & \xmark & \checkmark & \checkmark & \checkmark &  Bidirectional\\
+\hline
+\end{tabular}}
+\vspace{-0.1in}
+\end{table*}
