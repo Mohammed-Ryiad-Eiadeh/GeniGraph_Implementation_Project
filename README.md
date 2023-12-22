@@ -15,6 +15,9 @@ We demonstrate that our proposed framework leads to better resource allocations 
 # Cyber Attack Graph Example with Assets and Entry Nodes With Three Defenders to Allocate Resourcess.
 ![General_interdependent_network_legend](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e0eda941-decf-4d34-b3aa-cd9073e06dc7)
 
+# Neumarical Cyber Attack Graph Example
+![GraphSample2](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/7f9b7302-f635-4ec1-ad1a-33ce0fe7baf0)
+
 # Our Contribution.
 1) We propose a resource allocation method for interdependent systems, demonstrating GeniGraph’s impact on system security and quantifying the improvement it brings.
 2) We offer two versions of GeniGraph to enhance resource allocation decisions under three defense scenarios against various attack models.
