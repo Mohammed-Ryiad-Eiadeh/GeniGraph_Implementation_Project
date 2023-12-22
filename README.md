@@ -138,7 +138,16 @@ This work introduces an efficient defense strategy for securing interdependent s
 We assessed our approaches under various parameters, security budgets, and concurrent attacks. We tested them on five real-world interdependent systems and five attack graph datasets. Our experiments suggest that our approach can enhance the security level of interdependent systems and serve as a good alternative to existing resource allocation approaches. Our open-source implementation follows object-oriented programming principles, making it easy for researchers to conduct their own experiments and modify our approaches as needed.
 
 # How To Run The Code (read carefully please)
-1) 
+1) download intellIJ IDEA latest version
+2) dounload JDK 17+
+3) set up the environment variable for the bin folder of the JDK
+4) open the IDEA
+5) open the project
+6) make sure you are connected to the internet
+7) wait while the IDEA download all the libraries that are included as dependencies in the pom XML file
+8) go to the main
+9) firstly run the file "MainForGeneratingData" to generte the data
+10) run the other classes for the experiments
 
 # References
 1) [1] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
