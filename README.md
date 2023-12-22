@@ -54,7 +54,7 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 # Differencess Among our Model and Existed Ones. 
 | System | Multiple Defenders | Interdependent Subnetworks | Analytical Framework | Behavioral Biases | Various Attack Types | Multiple Rounds | Top Attack Paths | Graph Type |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| RAID08, MILCOM06 | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | Directed |
+| RAID08 [1], MILCOM06 | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | Directed |
 | S&P02, CCS12 | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | Directed |
 | S&P09, EC18, ACSAC12 | ❌ | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | Directed |
 | ICC17 | ❌ | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | Directed |
@@ -138,3 +138,6 @@ This work introduces an efficient defense strategy for securing interdependent s
 We assessed our approaches under various parameters, security budgets, and concurrent attacks. We tested them on five real-world interdependent systems and five attack graph datasets. Our experiments suggest that our approach can enhance the security level of interdependent systems and serve as a good alternative to existing resource allocation approaches. Our open-source implementation follows object-oriented programming principles, making it easy for researchers to conduct their own experiments and modify our approaches as needed.
 
 # References
+1) [1] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
+2) 
+
