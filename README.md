@@ -86,7 +86,7 @@ The row "Measurements" show the relative difference $RD$ of the fitness score co
 
 1) Top-1 attack path.
    
-| System | GeniGraph | Min-cut | Equally Distributed | Behavioral Defender | GeniGraph (MRF) |
+| System | GeniGraph | Min-cut [3] | Equally Distributed [2] | Behavioral Defender [9] | GeniGraph (MRF) |
 | --- | --- | --- | --- | --- | --- |
 | SCADA | 89.460 / 67.534 | 36.237 / 36.237 | 5.186 / 2.627 | 86.466 / 58.313 | 36.237 / 36.237 |
 | DER.1 | 89.460 / 27.488 | 67.534 / 34.931 | 6.300 / 0.925 | 88.268 / 25.330 | 67.534 / 34.931 |
@@ -102,7 +102,7 @@ The row "Measurements" show the relative difference $RD$ of the fitness score co
 
 2) Top-K defence.
 
-| System | GeniGraph | Min-cut | Equally Distributed | Behavioral Defender | GeniGraph (MRF) |
+| System | GeniGraph | Min-cut [3] | Equally Distributed [2] | Behavioral Defender [9] | GeniGraph (MRF) |
 | --- | --- | --- | --- | --- | --- |
 | SCADA | 43.021 / 24.516 | 36.237 / 27.222 | 5.186 / 2.627 | 40.206 / 22.893 | 36.237 / 27.222 |
 | DER.1 | 63.725 / 13.986 | 67.534 / 19.357 | 6.734 / 0.925 | 63.643 / 13.929 | 67.534 / 28.597 |
@@ -118,7 +118,7 @@ The row "Measurements" show the relative difference $RD$ of the fitness score co
 
 3) Weighted Top-K Defense.
 
-| System | GeniGraph | Min-cut | Equally Distributed | Behavioral Defender | GeniGraph (MRF) |
+| System | GeniGraph | Min-cut [3] | Equally Distributed [2] | Behavioral Defender [9] | GeniGraph (MRF) |
 | --- | --- | --- | --- | --- | --- |
 | SCADA | 43.0217 / 24.516 | 36.237 / 27.222 | 5.186 / 2.627 | 40.206 / 22.893 | 36.237 / 27.222 |
 | DER.1 | 64.235 / 14.385 | 67.534 / 19.357 | 6.734 / 0.925 | 63.643 / 13.929 | 67.534 / 28.597 |
@@ -193,4 +193,5 @@ here we have two project where first one utilizes the first fitness function and
 14) [14] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
 15) [15] Jianping Zeng, Shuang Wu, Yanyu Chen, Rui Zeng, and Chengrong Wu. 2019. Survey of Attack Graph Analysis Methods from the Perspective of Data and Knowledge Processing. Security and Communication Networks 2019 (2019). https: //doi.org/10.1155/2019/2031063.
 16) [16] Ryan A. Rossi and Nesreen K. Ahmed. 2015. The Network Data Repository with Interactive Graph Analytics and Visualization. In Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence. http://networkrepository.com.
+
 
