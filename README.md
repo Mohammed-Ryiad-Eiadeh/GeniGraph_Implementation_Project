@@ -81,6 +81,7 @@ The following parameters were used: maximum iteration ($M=2000$), population siz
 
 # ssssssssssssssss
 1) Top-1 attack path
+   
 | System | GeniGraph | Min-cut | Equally Distributed | Behavioral Defender | GeniGraph (MRF) |
 | --- | --- | --- | --- | --- | --- |
 | SCADA | 89.460 / 67.534 | 36.237 / 36.237 | 5.186 / 2.627 | 86.466 / 58.313 | 36.237 / 36.237 |
