@@ -140,11 +140,12 @@ This work introduces an efficient defense strategy for securing interdependent s
 We assessed our approaches under various parameters, security budgets, and concurrent attacks. We tested them on five real-world interdependent systems and five attack graph datasets. Our experiments suggest that our approach can enhance the security level of interdependent systems and serve as a good alternative to existing resource allocation approaches. Our open-source implementation follows object-oriented programming principles, making it easy for researchers to conduct their own experiments and modify our approaches as needed.
 
 # How To Run The Code (read carefully please)
+here we have two project where first one utilizes the first fitness function and the second one utilizes the second fitness function
 1) download intellIJ IDEA latest version
 2) dounload JDK 17 or higher
 3) set up the environment variable for the bin folder of the JDK 17+
 4) open the IDEA
-5) open the project (here we have two project where first one utilizes the first fitness function and the second one utilizes the second fitness function)
+5) open the project (according to the desired fitness function)
 6) make sure you are connected to the internet
 7) wait while the IDEA download all the libraries that are included as dependencies in the pom XML file
 8) go to the main file (here you will get 11 files that are executable (have "psvm" method)) so these files are as follows:
