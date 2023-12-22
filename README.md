@@ -1,5 +1,5 @@
 # GeniGraph_Project
-# GeniGraph: Genetic-based Novel Security Resource Allocation Methods for Interdependent Systems Modeled by Attack Graphs.
+# Paper tiltle: "GeniGraph: Genetic-based Novel Security Resource Allocation Methods for Interdependent Systems Modeled by Attack Graphs".
 
 More elaboration will be added in later on
 
