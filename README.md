@@ -16,7 +16,7 @@ We demonstrate that our proposed framework leads to better resource allocations 
 ![General_interdependent_network_legend](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e0eda941-decf-4d34-b3aa-cd9073e06dc7)
 
 # Neumarical Cyber Attack Graph Example
-![Screenshot (417)](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/c6474671-c6b0-4ce0-b6bc-6c3ce9163d32)
+![Screenshot (417)](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/14b544e3-34c8-4afe-a392-8b945ce2ce80)
 
 # Our Contribution.
 1) We propose a resource allocation method for interdependent systems, demonstrating GeniGraph’s impact on system security and quantifying the improvement it brings.
