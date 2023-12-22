@@ -18,6 +18,11 @@ We demonstrate that our proposed framework leads to better resource allocations 
 # Neumarical Cyber Attack Graph Example
 ![Screenshot (418)](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e19e1bca-49a2-4c8e-9641-ef50fb71bb2c)
 
+# Time Complexity of GeniGraph with the Respect to Number of Nodes and Edges Respictively.
+![NodeCurve](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/c8578c86-c4c5-44cb-9bd8-8544b25f3ebd)
+![EdgeCurve](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/02044938-0c1a-4ac5-8328-305c67493934)
+
+
 # Our Contribution.
 1) We propose a resource allocation method for interdependent systems, demonstrating GeniGraph’s impact on system security and quantifying the improvement it brings.
 2) We offer two versions of GeniGraph to enhance resource allocation decisions under three defense scenarios against various attack models.
