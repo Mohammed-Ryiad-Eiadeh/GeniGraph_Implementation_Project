@@ -19,8 +19,7 @@ We demonstrate that our proposed framework leads to better resource allocations 
 4) We evaluate our defense methods on ten attack graphs and compare the performance of three popular resource allocation methods.
 5) We implement our framework in Java, using object-oriented programming and reliable libraries for graph-theoretic algorithms.
 
-# Differencess Among our Model and Existed Ones
-
+# Differencess Among our Model and Existed Ones. 
 | System | Multiple Defenders | Interdependent Subnetworks | Analytical Framework | Behavioral Biases | Various Attack Types | Multiple Rounds | Top Attack Paths | Graph Type |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | RAID08, MILCOM06 | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | Directed |
