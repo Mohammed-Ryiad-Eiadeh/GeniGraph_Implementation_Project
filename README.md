@@ -76,6 +76,8 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 | ASS2009 [16] | 31 | 211 | 9 | 1 / 31 | Bidirectional | 17404 | 32746 |
 | AWS03 [16] | 42 | 152 | 15 | 1 / 42 | Bidirectional | 12218 | 39465 |
 
+Note: all of these datasets are stored in the project directory and is called dynamically so no need to set up their paths.
+
 # Parameter Configuration of Our Experiments
 The following parameters were used: maximum iteration ($M=2000$), population size (set of potential attack paths) ($N=2000$), mutation probability ($m_p=0.2$), mutation rate ($m_r=0.2$), and weight factor ($Wf=0.001$). The available security budgets for the defenders were $S_1=1$, $S_2=0.75$, and $S_3=0.5$. We underscore that our proposed defense strategies are effective regardless of the security budget, as demonstrated in our evaluation experiments. For the behavioral defender, the behavioral level ($a$) was set to 0.5. All experiments were performed using Java language (JDK 17) on a machine equipped with an Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz (12 CPUs), and 16384MB RAM.
 
@@ -139,15 +141,25 @@ We assessed our approaches under various parameters, security budgets, and concu
 
 # How To Run The Code (read carefully please)
 1) download intellIJ IDEA latest version
-2) dounload JDK 17+
-3) set up the environment variable for the bin folder of the JDK
+2) dounload JDK 17 or higher
+3) set up the environment variable for the bin folder of the JDK 17+
 4) open the IDEA
-5) open the project
+5) open the project (here we have two project where first one utilizes the first fitness function and the second one utilizes the second fitness function)
 6) make sure you are connected to the internet
 7) wait while the IDEA download all the libraries that are included as dependencies in the pom XML file
-8) go to the main
-9) firstly run the file "MainForGeneratingData" to generte the data
-10) run the other classes for the experiments
+8) go to the main file (here you will get 11 files that are executable (have "psvm" method)) so these files are as follows:
+   a) MainFirst: This class is used as the main class for the first scenario.
+   b) MainFirstBehavioralDefender: This class is used as the main class for the first scenario according to bahavioral defender.
+   c) MainFirstEquallyDistributionOnEdges: This class is used as the main class for the first scenario_equally Distribution.
+   d) MainFirstMB: This class is used to show the enhancement we gain after allocating our spare investments among Markove Blanket Nodes.
+   e) MainFirstMinCut: This class is used as the main class for the first scenario_min-cut.
+   f) MainSecond: This class is used as the main class for the second scenario.
+   g) MainSecondThirdBehavioralDefender: This class is used as the main class for the second-third scenario according to bahavioral defender.
+   h) MainSecondThirdDistributionEqually: This class is used as the main class for the second-third scenario equally distribution.
+   i) MainSecondThirdMB: This class is used to show the enhancement we gain after allocating our spare investments among Markove Blanket Nodes.
+   j) MainSecondThirdMinCut: This class is used as the main class for the second-third scenario_min-cut.
+   k) MainThird: This class is used as the main class for the third scenario.
+
 
 # References
 1) [1] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
