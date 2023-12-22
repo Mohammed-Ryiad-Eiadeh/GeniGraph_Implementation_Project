@@ -172,6 +172,9 @@ here we have two project where first one utilizes the first fitness function and
 
    k) MainThird: This class is used as the main class for the third scenario.
 
+9) Set up the desired hyperparameters
+10) Run the file to see the results.
+
 
 # References
 1) [1] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
