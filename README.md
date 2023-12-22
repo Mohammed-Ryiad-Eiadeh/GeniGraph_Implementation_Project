@@ -17,9 +17,14 @@ We demonstrate that our proposed framework leads to better resource allocations 
 2) $F_2(P) = \max_{P \in P_m} \big(\exp\big(-\sum_{(v_i,v_j)\in P} {x_{i,j}}\big) + Wf\sum_{v_m\in P} L_m\big), $
    
 $P$ is the given attack path.
+
 $P_m$ is a set of attack paths.
+
 $v_i,v_j$ are the nodes in $P$.
+
 $L_m$ is the loss corresponding to node $v_m$
+
+$Wf$ is the weight factor lies in [0,1]
    
 First function cares only about the initial investments of the path $P$. On the other hand, second function accounts for the total asset loss that the system will loos if the attack is occured successfully.
 
