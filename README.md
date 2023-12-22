@@ -19,14 +19,15 @@ We demonstrate that our proposed framework leads to better resource allocations 
 4) We evaluate our defense methods on ten attack graphs and compare the performance of three popular resource allocation methods.
 5) We implement our framework in Java, using object-oriented programming and reliable libraries for graph-theoretic algorithms.
 
-System	Multiple Defenders	Interdependent Subnetworks	Analytical Framework	Behavioral Biases	Various Attack Types	Multiple Rounds	Top Attack Paths	Graph Type
-RAID08~\cite{modelo2008determining}, MILCOM06~\cite{lippmann2006validating}	❌	✔️	❌	❌	❌	❌	❌	Directed
-S&P02~\cite{sheyner2002automated}, CCS12~\cite{yan2012towards}	❌	❌	✔️	❌	❌	❌	❌	Directed
-S&P09~\cite{acquisti2009nudging}, EC18~\cite{redmiles2018dancing}, ACSAC12~\cite{anderson2012security}	❌	❌	❌	✔️	❌	❌	❌	Directed
-ICC17~\cite{sanjab2017prospect}	❌	✔️	✔️	✔️	❌	❌	❌	Directed
-TCNS20~\cite{Abdallah2020}, TCNS18~\cite{7544460}	✔️	✔️	✔️	✔️	❌	❌	❌	Directed
-Behavioral Defender\cite{abdallah2021morshed}	✔️	✔️	✔️	✔️	✔️	✔️	❌	Directed
-\name	✔️	✔️	✔️	❌	✔️	✔️	✔️	Bidirectional
-Please note that the citation links (e.g., ~\cite{modelo2008determining}) won’t work in GitHub flavored markdown. You might want to replace them with the actual URLs or references.
+# Differencess Among our Model and Existed Ones
+| System | Multiple Defenders | Interdependent Subnetworks | Analytical Framework | Behavioral Biases | Various Attack Types | Multiple Rounds | Top Attack Paths | Graph Type |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| RAID08, MILCOM06 | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | Directed |
+| S&P02, CCS12 | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | Directed |
+| S&P09, EC18, ACSAC12 | ❌ | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ | Directed |
+| ICC17 | ❌ | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | Directed |
+| TCNS20, TCNS18 | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | Directed |
+| Behavioral Defender | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | Directed |
+| \name | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | Bidirectional |
 
 
