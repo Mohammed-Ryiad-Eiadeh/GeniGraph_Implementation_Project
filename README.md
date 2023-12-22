@@ -136,3 +136,5 @@ Note: much more experiments are conducted and illustrated in the paper, hence, r
 This work introduces an efficient defense strategy for securing interdependent systems with multiple cooperating defenders. We model these systems and their potential attack vulnerabilities using attack graphs. We present three defense scenarios: top-1 defense, top-K defense, and weighted top-K defense, each distributing resources differently based on risk levels. We also propose a version of our approach using Markov Random Field (MRF) for resource distribution.
 
 We assessed our approaches under various parameters, security budgets, and concurrent attacks. We tested them on five real-world interdependent systems and five attack graph datasets. Our experiments suggest that our approach can enhance the security level of interdependent systems and serve as a good alternative to existing resource allocation approaches. Our open-source implementation follows object-oriented programming principles, making it easy for researchers to conduct their own experiments and modify our approaches as needed.
+
+# References
