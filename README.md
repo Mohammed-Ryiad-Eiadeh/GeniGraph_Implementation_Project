@@ -65,16 +65,16 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 # Datasets We Used In Our Work
 | System | # Nodes | # Edges | # Critical Assets | $v_s$ / $v_m$ | Graph Type | run-time $F_1$ | run-time $F_2$ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| SCADA | 13 | 20 | 6 | 1 / 13 | Bidirectional | 4921 | 5858 |
-| DER.1 | 22 | 32 | 6 | 1 / 22 | Bidirectional | 8780 | 16389 |
-| E-Commerce | 20 | 32 | 4 | 1 / 20 | Bidirectional | 10256 | 17902 |
-| VOIP | 22 | 35 | 4 | 1 / 22 | Bidirectional | 11810 | 22046 |
-| HG1 | 7 | 10 | 2 | 1 / 7 | Bidirectional | 3347 | 4749 |
-| HG2 | 15 | 42 | 5 | 1 / 12 | Bidirectional | 5436 | 6560 |
-| ABSNP | 17 | 122 | 6 | 1 / 17 | Bidirectional | 8107 | 6811 |
-| ASFS3 | 27 | 163 | 9 | 1 / 27 | Bidirectional | 11998 | 27400 |
-| ASS2009 | 31 | 211 | 9 | 1 / 31 | Bidirectional | 17404 | 32746 |
-| AWS03 | 42 | 152 | 15 | 1 / 42 | Bidirectional | 12218 | 39465 |
+| SCADA [12] | 13 | 20 | 6 | 1 / 13 | Bidirectional | 4921 | 5858 |
+| DER.1 [13] | 22 | 32 | 6 | 1 / 22 | Bidirectional | 8780 | 16389 |
+| E-Commerce [14] | 20 | 32 | 4 | 1 / 20 | Bidirectional | 10256 | 17902 |
+| VOIP [14] | 22 | 35 | 4 | 1 / 22 | Bidirectional | 11810 | 22046 |
+| HG1 [15] | 7 | 10 | 2 | 1 / 7 | Bidirectional | 3347 | 4749 |
+| HG2 [15] | 15 | 42 | 5 | 1 / 12 | Bidirectional | 5436 | 6560 |
+| ABSNP [16] | 17 | 122 | 6 | 1 / 17 | Bidirectional | 8107 | 6811 |
+| ASFS3 [16] | 27 | 163 | 9 | 1 / 27 | Bidirectional | 11998 | 27400 |
+| ASS2009 [16] | 31 | 211 | 9 | 1 / 31 | Bidirectional | 17404 | 32746 |
+| AWS03 [16] | 42 | 152 | 15 | 1 / 42 | Bidirectional | 12218 | 39465 |
 
 # Parameter Configuration of Our Experiments
 The following parameters were used: maximum iteration ($M=2000$), population size (set of potential attack paths) ($N=2000$), mutation probability ($m_p=0.2$), mutation rate ($m_r=0.2$), and weight factor ($Wf=0.001$). The available security budgets for the defenders were $S_1=1$, $S_2=0.75$, and $S_3=0.5$. We underscore that our proposed defense strategies are effective regardless of the security budget, as demonstrated in our evaluation experiments. For the behavioral defender, the behavioral level ($a$) was set to 0.5. All experiments were performed using Java language (JDK 17) on a machine equipped with an Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz (12 CPUs), and 16384MB RAM.
@@ -149,4 +149,9 @@ We assessed our approaches under various parameters, security budgets, and concu
 9) [9] Mustafa Abdallah, Parinaz Naghizadeh, Ashish R. Hota, Timothy Cason, Saurabh Bagchi, and Shreyas Sundaram. 2020. Behavioral and Game-Theoretic Security Investments in Interdependent Systems Modeled by Attack Graphs. IEEE Transactions on Control of Network Systems 7, 4 (2020), 1585–1596. https: //doi.org/10.1109/TCNS.2020.2988007 arXiv:2001.03213.
 10) [10] A. R. Hota and S. Sundaram. 2018. Interdependent Security Games on Networks Under Behavioral Probability Weighting. IEEE Transactions on Control of Network Systems 5, 1 (March 2018), 262–273. https://doi.org/10.1109/TCNS.2016.2600484.
 11) [11] M. Abdallah, D. Woods, P. Naghizadeh, I. Khalil, T. Cason, S. undaram, and S. Bagchi. 2021. Morshed: Guiding behavioral decision-makers towards better security investment in interdependent systems. In Proceedings of the 2021 ACM Asia Conference on Computer and Communications Security. 378–392.
+12) [12] A. R. Hota, A. Clements, S. Sundaram, and S. Bagchi. 2016. Optimal and game-theoretic deployment of security investments in interdependent assets. In International Conference on Decision and Game Theory for Security. 101–113.
+13) [13] S. Jauhar, B. Chen, W. G. Temple, X. Dong, Z. Kalbarczyk, W. H. Sanders, and D. M. Nicol. 2015. Model-based cybersecurity assessment with nescor smart grid failure scenarios. In Dependable Computing (PRDC), 2015 IEEE 21st Pacific Rim International Symposium on. IEEE, 319–324.
+14) [14] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
+15) [15] Jianping Zeng, Shuang Wu, Yanyu Chen, Rui Zeng, and Chengrong Wu. 2019. Survey of Attack Graph Analysis Methods from the Perspective of Data and Knowledge Processing. Security and Communication Networks 2019 (2019). https: //doi.org/10.1155/2019/2031063.
+16) [16] Ryan A. Rossi and Nesreen K. Ahmed. 2015. The Network Data Repository with Interactive Graph Analytics and Visualization. In Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence. http://networkrepository.com.
 
