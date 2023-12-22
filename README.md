@@ -148,16 +148,27 @@ We assessed our approaches under various parameters, security budgets, and concu
 6) make sure you are connected to the internet
 7) wait while the IDEA download all the libraries that are included as dependencies in the pom XML file
 8) go to the main file (here you will get 11 files that are executable (have "psvm" method)) so these files are as follows:
+   
    a) MainFirst: This class is used as the main class for the first scenario.
+   
    b) MainFirstBehavioralDefender: This class is used as the main class for the first scenario according to bahavioral defender.
+   
    c) MainFirstEquallyDistributionOnEdges: This class is used as the main class for the first scenario_equally Distribution.
+
    d) MainFirstMB: This class is used to show the enhancement we gain after allocating our spare investments among Markove Blanket Nodes.
+
    e) MainFirstMinCut: This class is used as the main class for the first scenario_min-cut.
+
    f) MainSecond: This class is used as the main class for the second scenario.
+
    g) MainSecondThirdBehavioralDefender: This class is used as the main class for the second-third scenario according to bahavioral defender.
+
    h) MainSecondThirdDistributionEqually: This class is used as the main class for the second-third scenario equally distribution.
+
    i) MainSecondThirdMB: This class is used to show the enhancement we gain after allocating our spare investments among Markove Blanket Nodes.
+
    j) MainSecondThirdMinCut: This class is used as the main class for the second-third scenario_min-cut.
+
    k) MainThird: This class is used as the main class for the third scenario.
 
 
