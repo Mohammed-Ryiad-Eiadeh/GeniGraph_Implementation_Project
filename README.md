@@ -132,6 +132,16 @@ The row "Measurements" show the relative difference $RD$ of the fitness score co
 | AWS03 | 67.289 / 29.516 | 67.534 / 0 | 888 / 0.254 | 67.169 / 21.417 | 52.763 / 42.068 |
 | Sum of Ranks | 38 | 30.5 | 12 | 29 | 40.5 |
 
+In our study, we conducted a comprehensive experiment to evaluate the performance of our proposed method under the first fitness function $F_1$. The results are presented in the above tables for all resource allocation (defense) scenarios. 
+
+In the first defense scenario (top-1 defense), our proposed method demonstrated superior performance compared to other baseline algorithms across different datasets. It achieved the highest rank with a sum of ranks equal to 44 and a significant $p$-value of $<0.05$, leading to the rejection of the null hypothesis.
+
+Interestingly, the baseline [9] performed better than our proposed method (MRF), which in turn outperformed [3] and [2], respectively. 
+
+It's worth noting that under the first defense scenario (top-1 defense), finding the top-ranked path in an environment with positive edge weights can be projected as finding the shortest path between the source and destination. To validate this equivalence, we employed the Dijkstra algorithm in our experiment. The results confirmed that our proposed method produces the same top attack path as the one produced by the Dijkstra algorithm.
+
+This experiment was pivotal in demonstrating the effectiveness of our proposed method and provided valuable insights into its performance relative to other established algorithms.
+
 Note: much more experiments are conducted and illustrated in the paper, hence, read the paper carefully.
 
 # Conclusion
