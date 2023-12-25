@@ -34,7 +34,7 @@ First function cares only about the initial investments of the path $P$. On the 
 ![General_interdependent_network_legend](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e0eda941-decf-4d34-b3aa-cd9073e06dc7)
 
 # Neumarical Cyber Attack Graph Example
-![Screenshot (418)](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e19e1bca-49a2-4c8e-9641-ef50fb71bb2c)
+![attack graph](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/0be8b108-1731-4f61-b04c-37686468dd10)
 
 # Time Complexity of GeniGraph with the Respect to Number of Nodes and Edges Respictively
 ![NodeCurve](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/c8578c86-c4c5-44cb-9bd8-8544b25f3ebd)
