@@ -211,4 +211,6 @@ Mohammad Aleiadeh, mraleiad@iu.edu or maleiade@purude.edu
 
 dr. Mustafa Abdallah, mabdall@iu.edu
 
+Note: Authors are arranged alphabetically.
+
 
