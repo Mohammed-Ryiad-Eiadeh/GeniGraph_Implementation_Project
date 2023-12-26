@@ -70,11 +70,12 @@ Now, if you want to apply these approaches to your own datasets (I consider any 
 2) From second like till the end, your data should be like $v_{i1}$ $v_{i2}$ which means $v_{i1}$ has an edge to $v_{i2}$ such that *"10 25"* means node with $id = 10$ is connected to node with $id = 25$. Here the initial investment is one by default.
 3) To have connections or edges with initial investments with particular weights, you data should be formatted as $v_{i1}$ $v_{i2}$ $weight$ such that *"10 25 2.5"* means node with $id = 10$ is connected to node with $id = 25$ with a weight equals to 2.5.
 4) Note any other format will crash the code, and the nodes ids must be integer, yet not the case for the weight.
+
+Note: For getting a deeper understanding, go to one of our projects and open one of our dataset and try to mimic its' format to construct yours.
+
 5) After constructing your own data, drag and drop it in the projects' folder you want to work with.
 6) Go to *"Attack_Defence_Graph.org"* package, the to *"Graph"* class and modify it according to your needs.
 7) Then, go to *"GraphData"* class, the to *"getNodeAssetsLossValues()"* method and modify it according to your needs.
-
-Note: For getting a deeper understanding, go to one of our projects and open one of our dataset and try to mimic its' format to construct yours.
 
 | System | # Nodes | # Edges | # Critical Assets | $v_s$ / $v_m$ | Graph Type | run-time $F_1$ | run-time $F_2$ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
