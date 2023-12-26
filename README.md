@@ -74,8 +74,8 @@ Now, if you want to apply these approaches to your own datasets (I consider any 
 Note: For getting a deeper understanding, go to one of our projects and open one of our datasets and try to mimic its' format to construct yours.
 
 5) After constructing your own data, drag and drop it in the projects' folder you want to work with.
-6) Go to *"Attack_Defence_Graph.org"* package, the to *"Graph"* class and modify it according to your needs.
-7) Then, go to *"GraphData"* class, the to *"getNodeAssetsLossValues()"* method and modify it according to your needs.
+6) Go to *"Attack_Defence_Graph.org"* package, then to *"Graph"* class and modify it according to your needs.
+7) Then, go to *"GraphData"* class, then to *"getNodeAssetsLossValues()"* method and modify it according to your needs.
 
 | System | # Nodes | # Edges | # Critical Assets | $v_s$ / $v_m$ | Graph Type | run-time $F_1$ | run-time $F_2$ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
