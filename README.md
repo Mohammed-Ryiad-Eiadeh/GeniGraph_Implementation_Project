@@ -62,6 +62,10 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 | GeniGraph | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | Bidirectional |
 
 # Datasets We Used In Our Work
+
+For our assessment, we used ten distinct attack graphs, each symbolizing a different interdependent system and network structure. We divided these datasets into three groups. The first group contains four attack graphs from real-world interconnected systems, namely DER.1, SCADA, E-commerce, and VOIP. Signifies an attack step, and we consider every edge to be bidirectional. The second group consists of two graph typologies, referred to as HG1 and HG2, which were introduced in earlier studies. The third group includes four datasets from a renowned interactive scientific graph data repository, named aves-sparrow-social-2009 (ASC2009), aves-sparrowlyon-flock-season3 (ASFS3), aves-weaver-social-03 (AWS03), and aves-barn-swallow-non-physical (ABSNP). This repository is a network data collection produced by top-tier US niversities. Now, if you want to applay these approaches on your own datasets (database since I believe that text file is a form of database), then you need to mimic our data format by following these instruction:
+1) First line in your data should be *"17 <--# of nodes, 122 edges"* or *"17 <--# of nodes"* or *"17"*.
+
 | System | # Nodes | # Edges | # Critical Assets | $v_s$ / $v_m$ | Graph Type | run-time $F_1$ | run-time $F_2$ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | SCADA [12] | 13 | 20 | 6 | 1 / 13 | Bidirectional | 4921 | 5858 |
