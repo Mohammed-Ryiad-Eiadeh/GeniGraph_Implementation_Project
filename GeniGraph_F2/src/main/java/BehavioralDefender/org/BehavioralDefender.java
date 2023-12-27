@@ -21,7 +21,7 @@ public class BehavioralDefender {
      */
     public BehavioralDefender(double[] edgeWeights, double budget, float alpha) {
         if (budget <= 0) {
-            throw new IllegalStateException("The spare bidget must be positive integer");
+            throw new IllegalStateException("The spare budget must be positive integer");
         }
         if (alpha < 0 || alpha > 1) {
             throw new IllegalStateException("Alpha must be relied in 0 and 1");
