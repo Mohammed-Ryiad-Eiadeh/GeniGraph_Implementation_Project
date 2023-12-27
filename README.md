@@ -67,18 +67,6 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 
 For our assessment, we used ten distinct attack graphs, each symbolizing a different interdependent system and network structure. We divided these datasets into three groups. The first group contains four attack graphs from real-world interconnected systems, namely DER.1, SCADA, E-commerce, and VOIP. Signifies an attack step, and we consider every edge to be bidirectional. The second group consists of two graph typologies, referred to as HG1 and HG2, which were introduced in earlier studies. The third group includes four datasets from a renowned interactive scientific graph data repository, named aves-sparrow-social-2009 (ASC2009), aves-sparrowlyon-flock-season3 (ASFS3), aves-weaver-social-03 (AWS03), and aves-barn-swallow-non-physical (ABSNP). This repository is a network data collection produced by top-tier US niversities. 
 
-Now, if you want to apply these approaches to your own datasets (I consider any object that holds retrievable and processable data as a database, including text files), you need to mimic our data format by following these instructions:
-1) First line in your data should be something like *"|V| <--# of nodes, |E| edges"* or *"|V| <--# of nodes"* or *"|V|"*. *|V|* stands for the number of nodes, and *|E|* stands for the number of edges or connections.
-2) From second like till the end, your data should be like $v_{i1}$ $v_{i2}$ which means $v_{i1}$ has an edge to $v_{i2}$ such that *"10 25"* means node with $id = 10$ is connected to node with $id = 25$. Here the initial investment is one by default.
-3) To have connections or edges with initial investments with particular weights, you data should be formatted as $v_{i1}$ $v_{i2}$ $weight$ such that *"10 25 2.5"* means node with $id = 10$ is connected to node with $id = 25$ with a weight equals to 2.5.
-4) Note any other format will crash the code, and the nodes ids must be integer, yet not the case for the weight.
-
-Note: For getting a deeper understanding, go to one of our projects and open one of our datasets and try to mimic its' format to construct yours.
-
-5) After constructing your own data, drag and drop it in the projects' folder you want to work with.
-6) Go to *"Attack_Defence_Graph.org"* package, then to *"Graph"* class and modify it according to your needs.
-7) Then, go to *"GraphData"* class, then to *"getNodeAssetsLossValues()"* method and modify it according to your needs.
-
 | System | # Nodes | # Edges | # Critical Assets | $v_s$ / $v_m$ | Graph Type | run-time $F_1$ | run-time $F_2$ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | SCADA [12] | 13 | 20 | 6 | 1 / 13 | Bidirectional | 4921 | 5858 |
@@ -93,6 +81,19 @@ Note: For getting a deeper understanding, go to one of our projects and open one
 | AWS03 [16] | 42 | 152 | 15 | 1 / 42 | Bidirectional | 12218 | 39465 |
 
 Note: all of these datasets are stored in the project directory and is called dynamically so no need to set up their paths.
+
+# Construct Your Own DataSet
+Now, if you want to apply these approaches to your own datasets (I consider any object that holds retrievable and processable data as a database, including text files), you need to mimic our data format by following these instructions:
+1) First line in your data should be something like *"|V| <--# of nodes, |E| edges"* or *"|V| <--# of nodes"* or *"|V|"*. *|V|* stands for the number of nodes, and *|E|* stands for the number of edges or connections.
+2) From second like till the end, your data should be like $v_{i1}$ $v_{i2}$ which means $v_{i1}$ has an edge to $v_{i2}$ such that *"10 25"* means node with $id = 10$ is connected to node with $id = 25$. Here the initial investment is one by default.
+3) To have connections or edges with initial investments with particular weights, you data should be formatted as $v_{i1}$ $v_{i2}$ $weight$ such that *"10 25 2.5"* means node with $id = 10$ is connected to node with $id = 25$ with a weight equals to 2.5.
+4) Note any other format will crash the code, and the nodes ids must be integer, yet not the case for the weight.
+
+Note: For getting a deeper understanding, go to one of our projects and open one of our datasets and try to mimic its' format to construct yours.
+
+5) After constructing your own data, drag and drop it in the projects' folder you want to work with.
+6) Go to *"Attack_Defence_Graph.org"* package, then to *"Graph"* class and modify it according to your needs.
+7) Then, go to *"GraphData"* class, then to *"getNodeAssetsLossValues()"* method and modify it according to your needs.
 
 # Parameter Configuration of Our Experiments
 The following parameters were used: maximum iteration ($M=2000$), population size (set of potential attack paths) ($N=2000$), mutation probability ($m_p=0.2$), mutation rate ($m_r=0.2$), and weight factor ($Wf=0.001$). The available security budgets for the defenders were $S_1=1$, $S_2=0.75$, and $S_3=0.5$. We underscore that our proposed defense strategies are effective regardless of the security budget, as demonstrated in our evaluation experiments. For the behavioral defender, the behavioral level ($a$) was set to 0.5. All experiments were performed using Java language (JDK 17) on a machine equipped with an Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz (12 CPUs), and 16384MB RAM.
