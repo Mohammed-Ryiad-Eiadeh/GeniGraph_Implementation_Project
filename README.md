@@ -3,6 +3,7 @@
 # Paper Tiltle: "GeniGraph: Genetic-based Novel Security Resource Allocation Methods for Interdependent Systems Modeled by Attack Graphs"
 
 # abstract
+
 We design a resource allocation framework for securing interdependent systems managed by multiple defenders. Our framework models these multi-defender interdependent systems with the notion of attack graphs. We propose three defense scenarios that are derived from the top attack paths that defenders predict, based on their system knowledge, which attackers may consider to launch their attacks. 
 
 Furthermore, we propose a defense method with low sensitivity to the number of concurrent attacks, based on a graph-theoretical notion known as the Markov random field. We elucidate the advantages gained from our decision-making framework through its application to ten attack graphs (that includes multiple real-world interdependent systems). In particular, we quantify the level of security improvement under our defense methods compared to three well-known resource allocation algorithms. 
@@ -16,6 +17,7 @@ In our work, we start with cyber attack graph, which serves as the input for our
 ![download](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/751bc877-625f-46b1-ac81-3f0a5c0f2068)
 
 # Fitness Function
+
 1) $F_1(P)= \max_{P \in P_m} \big(\exp\big(-\sum_{(v_i,v_j)\in P} {x_{i,j}}\big)\big).$
 2) $F_2(P) = \max_{P \in P_m} \big(\exp\big(-\sum_{(v_i,v_j)\in P} {x_{i,j}}\big) + Wf\sum_{v_m\in P} L_m\big).$
    
@@ -32,12 +34,15 @@ In our work, we start with cyber attack graph, which serves as the input for our
 First function cares only about the initial investments of the path $P$. On the other hand, second function accounts for the total asset loss that the system will loos if the attack is occured successfully.
 
 # Cyber Attack Graph Example with Assets and Entry Nodes With Three Defenders to Allocate Resourcess
+
 ![General_interdependent_network_legend](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e0eda941-decf-4d34-b3aa-cd9073e06dc7)
 
 # Neumarical Cyber Attack Graph Example
+
 ![attack graph](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/8f087bc8-24a1-4224-b990-126f7bfcc83b)
 
 # Time Complexity of GeniGraph with the Respect to Number of Nodes and Edges Respictively
+
 ![NodeCurve](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/c8578c86-c4c5-44cb-9bd8-8544b25f3ebd)
 
 ![EdgeCurve](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/02044938-0c1a-4ac5-8328-305c67493934)
@@ -46,6 +51,7 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 
 
 # Our Contribution
+
 1) We propose a resource allocation method for interdependent systems, demonstrating GeniGraph’s impact on system security and quantifying the improvement it brings.
 2) We offer two versions of GeniGraph to enhance resource allocation decisions under three defense scenarios against various attack models.
 3) We use a genetic algorithm to generate potential paths from the attacker’s entry node to the target, proposing two fitness functions. The first considers edge weights, while the second also accounts for estimated financial loss.
@@ -53,6 +59,7 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 5) We implement our framework in Java, using object-oriented programming and reliable libraries for graph-theoretic algorithms.
 
 # Differencess Among our Model and Existed Ones
+
 | System | Multiple Defenders | Interdependent Subnetworks | Analytical Framework | Behavioral Biases | Various Attack Types | Multiple Rounds | Top Attack Paths | Graph Type |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | RAID08 [1], MILCOM06 [2] | ❌ | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | Directed |
@@ -64,6 +71,7 @@ As the number of nodes or edges increases, we notice that the actual run-time re
 | GeniGraph | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | Bidirectional |
 
 # Datasets We Used In Our Work
+
 For our assessment, we used ten distinct attack graphs, each symbolizing a different interdependent system and network structure. We divided these datasets into three groups. The first group contains four attack graphs from real-world interconnected systems, namely DER.1, SCADA, E-commerce, and VOIP. Signifies an attack step, and we consider every edge to be bidirectional. The second group consists of two graph typologies, referred to as HG1 and HG2, which were introduced in earlier studies. The third group includes four datasets from a renowned interactive scientific graph data repository, named aves-sparrow-social-2009 (ASC2009), aves-sparrowlyon-flock-season3 (ASFS3), aves-weaver-social-03 (AWS03), and aves-barn-swallow-non-physical (ABSNP). This repository is a network data collection produced by top-tier US niversities. 
 
 | System | # Nodes | # Edges | # Critical Assets | $v_s$ / $v_m$ | Graph Type | run-time $F_1$ | run-time $F_2$ |
@@ -81,7 +89,8 @@ For our assessment, we used ten distinct attack graphs, each symbolizing a diffe
 
 Note: all of these datasets are stored in the project directory and is called dynamically so no need to set up their paths.
 
-# Construct Your Own DataSet
+# Construct Your Own Dataset or Database
+
 Now, if you want to apply these approaches to your own datasets (I consider any object that holds retrievable and processable data as a database, including text files), you need to mimic our data format by following these instructions:
 1) First line in your data should be something like *"|V| <--# of nodes, |E| edges"* or *"|V| <--# of nodes"* or *"|V|"*. *|V|* stands for the number of nodes, and *|E|* stands for the number of edges or connections.
 2) From second line till the end, your data should be like $v_{i1}$ $v_{i2}$ (must be separated by one space) which means $v_{i1}$ has an edge to $v_{i2}$ such that *"10 25"* which means that node with $id = 10$ is connected to the node with $id = 25$. Here the initial investment is 1 by default.
@@ -95,9 +104,11 @@ Note: For getting a deeper understanding, go to one of our projects and open one
 7) Then, go to *"GraphData"* class, then to *"getNodeAssetsLossValues()"* method and modify it according to your needs.
 
 # Parameter Configuration of Our Experiments
+
 The following parameters were used: maximum iteration ($M=2000$), population size (set of potential attack paths) ($N=2000$), mutation probability ($m_p=0.2$), mutation rate ($m_r=0.2$), and weight factor ($Wf=0.001$). The available security budgets for the defenders were $S_1=1$, $S_2=0.75$, and $S_3=0.5$. We underscore that our proposed defense strategies are effective regardless of the security budget, as demonstrated in our evaluation experiments. For the behavioral defender, the behavioral level ($a$) was set to 0.5. All experiments were performed using Java language (JDK 17) on a machine equipped with an Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz (12 CPUs), and 16384MB RAM.
 
 # Comparison of GeniGraph and baseline systems on all datasets
+
 The row "Measurements" show the relative difference $RD$ of the fitness score corresponding to fitness function $F_1$, and the relative difference of the expected cost $CR$ for all defense scenarios. The larger $RD$ and $CR$, the better the defense method with significance level equals 0.05 for the Friedman test.
 
 1) Top-1 attack path
@@ -161,11 +172,13 @@ This experiment was pivotal in demonstrating the effectiveness of our proposed m
 Note: much more experiments are conducted and illustrated in the paper, hence, read the paper carefully.
 
 # Conclusion
+
 This work introduces an efficient defense strategy for securing interdependent systems with multiple cooperating defenders. We model these systems and their potential attack vulnerabilities using attack graphs. We present three defense scenarios: top-1 defense, top-K defense, and weighted top-K defense, each distributing resources differently based on risk levels. We also propose a version of our approach using Markov Random Field (MRF) for resource distribution.
 
 We assessed our approaches under various parameters, security budgets, and concurrent attacks. We tested them on five real-world interdependent systems and five attack graph datasets. Our experiments suggest that our approach can enhance the security level of interdependent systems and serve as a good alternative to existing resource allocation approaches. Our open-source implementation follows object-oriented programming principles and packaging paradigm, making it easy for researchers to conduct their own experiments and modify our approaches as needed.
 
 # How To Run The Code (read carefully please)
+
 here we have two project where first one utilizes the first fitness function and the second one utilizes the second fitness function
 1) Download intellIJ IDEA latest version
 2) Dounload JDK 17 or higher
@@ -203,6 +216,7 @@ here we have two project where first one utilizes the first fitness function and
 
 
 # References
+
 1) [1] G. Modelo-Howard, S. Bagchi, and G. Lebanon. 2008. Determining placement of intrusion detectors for a distributed application through bayesian network modeling. In International Workshop on Recent Advances in Intrusion Detection. Springer, 271–290.
 2) [2] R. Lippmann, K. Ingols, C. Scott, K. Piwowarski, K. Kratkiewicz, M. Artz, and R. Cunningham. 2006. Validating and restoring defense in depth using attack graphs. In IEEE Military Communications Conference. IEEE, 1–10.
 3) [3] O. Sheyner, J. Haines, S. Jha, R. Lippmann, and J. M. Wing. 2002. Automated generation and analysis of attack graphs. In Proceedings 2002 IEEE Symposium on Security and Privacy. IEEE, 273–284.
@@ -221,6 +235,7 @@ here we have two project where first one utilizes the first fitness function and
 16) [16] Ryan A. Rossi and Nesreen K. Ahmed. 2015. The Network Data Repository with Interactive Graph Analytics and Visualization. In Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence. http://networkrepository.com.
 
 # Contact With Authors
+
 Send email to the following authors for any question about this work, and it is our pleasure to ansawer your question.
 
 Mohammad Aleiadeh, mraleiad@iu.edu or maleiade@purude.edu
