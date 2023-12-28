@@ -28,7 +28,7 @@ public class FitnessFunction {
      */
     public double evaluateSolution(List<Integer> solution) {
         if (solution == null) {
-            throw new IllegalArgumentException("The fitnes scores holder is empty");
+            throw new IllegalArgumentException("The solution is null");
         }
         double totalCcost = 0d;
         for (int i = 0; i < solution.size() - 1; i++) {
