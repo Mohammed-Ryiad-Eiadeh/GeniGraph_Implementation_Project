@@ -81,7 +81,7 @@ For our assessment, we used ten distinct attack graphs, each symbolizing a diffe
 | E-Commerce [14] | 20 | 32 | 4 | 1 / 20 | Bidirectional | 10256 | 17902 |
 | VOIP [14] | 22 | 35 | 4 | 1 / 22 | Bidirectional | 11810 | 22046 |
 | HG1 [15] | 7 | 10 | 2 | 1 / 7 | Bidirectional | 3347 | 4749 |
-| HG2 [15] | 15 | 42 | 5 | 1 / 12 | Bidirectional | 5436 | 6560 |
+| HG2 [15] | 15 | 22 | 5 | 1 / 12 | Bidirectional | 5436 | 6560 |
 | ABSNP [16] | 17 | 122 | 6 | 1 / 17 | Bidirectional | 8107 | 6811 |
 | ASFS3 [16] | 27 | 163 | 9 | 1 / 27 | Bidirectional | 11998 | 27400 |
 | ASS2009 [16] | 31 | 211 | 9 | 1 / 31 | Bidirectional | 17404 | 32746 |
