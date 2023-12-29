@@ -78,20 +78,20 @@ public class GraphData {
      */
     public double[] getNodeAssetsLossValues() {
         return switch (graphId) {
-            case HG1, HG1_rand ->                new double[] {0, 0, 0, 0, 25, 0, 30};  // vs = 1 and vm = 7
-            case SCADA, SCADA_rand ->            new double[] {0, 63, 39, 0, 0, 0, 33, 0, 0, 22, 0, 90, 45};  // vs = 1 and vm = 13
-            case HG2, HG2_rand ->                new double[] {0, 0, 0, 0, 25, 0, 30, 0, 55, 0, 0, 20, 0, 30, 0};  // vs = 1 and vm = 12
-            case ABSNP, ABSNP_rand ->            new double[] {0, 33, 0, 35, 0, 0, 14, 0, 0, 0, 65, 0, 0, 0, 33, 0, 65};  // vs = 1 and vm = 17
-            case e_commerce, e_commerce_rand ->  new double[] {0, 0, 45, 0, 0, 0, 65, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 75};  // vs = 1 and vm = 20
-            case DER, DER_rand ->                new double[] {0, 0, 0, 20, 0, 0, 62, 0, 0, 0, 0, 33, 0, 89, 0, 0, 0, 0, 0, 56, 0, 60};  // vs = 1 and vm = 22
-            case VOIP, VOIP_rand ->              new double[] {0, 0, 38, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 72, 0, 0, 0, 81};  // vs = 1 and vm = 22
-            case ASFS3, ASFS3_rand ->            new double[] {0, 0, 47, 0, 0, 33, 0, 42, 0, 0, 98, 0, 47, 0, 0, 0, 0, 0, 74, 0, 97, 0, 0, 29, 0, 0, 20};  // vs = 1 and vm = 27
-            case ASS2009, ASS2009_rand ->        new double[] {0, 91, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 13, 0, 35, 0, 0, 9, 0, 0, 0, 15, 0, 0, 53, 0, 60};  // vs = 1 and vm = 31
-            case AWS03, AWS03_rand ->            new double[] {0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 56, 0, 0, 11, 97, 20, 0, 96, 0, 0, 0, 0, 0, 0, 59, 0, 81, 0, 0, 33, 0, 21, 76, 7, 0, 0, 21, 0, 15, 0, 0, 22};  // vs = 1 and vm = 42
-            case ALSFSA2 ->                      new double[] {0, 68, 14, 0, 0, 28, 0, 84, 23, 73, 82, 0, 0, 58, 72, 0, 0, 86, 0, 0, 92, 39, 66, 38, 29, 24, 90, 66, 67, 0, 0, 69, 28, 12, 55, 0, 23, 91, 0, 0, 0, 0, 0, 80, 0, 33};  // vs = 1 and vm = 46
-            case ASS ->                          new double[] {0, 0, 83, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 12, 95, 0, 9, 0, 24, 0, 0, 0, 42, 0, 21, 71, 61, 91, 0, 0, 41, 21, 98, 0, 99, 14, 0, 0, 0, 0, 0, 58, 0, 0, 76, 0, 0, 34, 0, 0, 42};  // vs = 1 and vm = 52
-            case ATF ->                          new double[] {0, 0, 13, 0, 77, 0, 99, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 19, 49, 54, 0, 38, 0, 87, 0, 10, 78, 0, 23, 0, 0, 0, 0, 0, 0, 71, 93, 0, 0, 0, 2, 0, 0, 44, 59, 42, 0, 0, 0, 26, 0, 0, 0, 0, 55};  // vs = 1 and vm = 62
-            case Figure3 ->                      new double[] {0, 0, 25, 10, 55, 10}; // vs = 1 and vm = 6 / This is the example we clarify in this research (refere to Figure 3)
+            case HG1, HG1_rand ->                /*vs = 1 and vm = 7*/    new double[] {0, 0, 0, 0, 25, 0, 30};  
+            case SCADA, SCADA_rand ->            /*vs = 1 and vm = 13*/   new double[] {0, 63, 39, 0, 0, 0, 33, 0, 0, 22, 0, 90, 45};  
+            case HG2, HG2_rand ->                /*vs = 1 and vm = 12*/   new double[] {0, 0, 0, 0, 25, 0, 30, 0, 55, 0, 0, 20, 0, 30, 0};  
+            case ABSNP, ABSNP_rand ->            /*vs = 1 and vm = 17*/   new double[] {0, 33, 0, 35, 0, 0, 14, 0, 0, 0, 65, 0, 0, 0, 33, 0, 65};   
+            case e_commerce, e_commerce_rand ->  /*vs = 1 and vm = 20*/   new double[] {0, 0, 45, 0, 0, 0, 65, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 0, 0, 75};  
+            case DER, DER_rand ->                /*vs = 1 and vm = 22*/   new double[] {0, 0, 0, 20, 0, 0, 62, 0, 0, 0, 0, 33, 0, 89, 0, 0, 0, 0, 0, 56, 0, 60};  
+            case VOIP, VOIP_rand ->              /*vs = 1 and vm = 22*/   new double[] {0, 0, 38, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 72, 0, 0, 0, 81}; 
+            case ASFS3, ASFS3_rand ->            /*vs = 1 and vm = 27*/   new double[] {0, 0, 47, 0, 0, 33, 0, 42, 0, 0, 98, 0, 47, 0, 0, 0, 0, 0, 74, 0, 97, 0, 0, 29, 0, 0, 20};  
+            case ASS2009, ASS2009_rand ->        /*vs = 1 and vm = 31*/   new double[] {0, 91, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 54, 0, 0, 0, 13, 0, 35, 0, 0, 9, 0, 0, 0, 15, 0, 0, 53, 0, 60};  
+            case AWS03, AWS03_rand ->            /*vs = 1 and vm = 42*/   new double[] {0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 56, 0, 0, 11, 97, 20, 0, 96, 0, 0, 0, 0, 0, 0, 59, 0, 81, 0, 0, 33, 0, 21, 76, 7, 0, 0, 21, 0, 15, 0, 0, 22};  
+            case ALSFSA2 ->                      /*vs = 1 and vm = 46*/   new double[] {0, 68, 14, 0, 0, 28, 0, 84, 23, 73, 82, 0, 0, 58, 72, 0, 0, 86, 0, 0, 92, 39, 66, 38, 29, 24, 90, 66, 67, 0, 0, 69, 28, 12, 55, 0, 23, 91, 0, 0, 0, 0, 0, 80, 0, 33};  
+            case ASS ->                          /*vs = 1 and vm = 52*/   new double[] {0, 0, 83, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 12, 95, 0, 9, 0, 24, 0, 0, 0, 42, 0, 21, 71, 61, 91, 0, 0, 41, 21, 98, 0, 99, 14, 0, 0, 0, 0, 0, 58, 0, 0, 76, 0, 0, 34, 0, 0, 42};  
+            case ATF ->                          /*vs = 1 and vm = 62*/   new double[] {0, 0, 13, 0, 77, 0, 99, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 19, 49, 54, 0, 38, 0, 87, 0, 10, 78, 0, 23, 0, 0, 0, 0, 0, 0, 71, 93, 0, 0, 0, 2, 0, 0, 44, 59, 42, 0, 0, 0, 26, 0, 0, 0, 0, 55};  
+            case Figure3 ->                      /*vs = 1 and vm = 6*/    new double[] {0, 0, 25, 10, 55, 10}; // This is the example we clarify in this research (refere to Figure 3)
         };
     }
 
