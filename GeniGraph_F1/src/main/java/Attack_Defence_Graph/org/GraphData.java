@@ -127,14 +127,20 @@ public class GraphData {
         for (int node = 0; node < data.length; node++) {
             for (int nod = 0; nod < data[0].length; nod++) {
                 if (data[node][nod] > 0) {
-                    visualizer.addEdge(String.valueOf(node + 1).concat((nod + 1) + ""), "Node : " + (node + 1), "Node : " + (nod + 1), false);
+                    String nodeI = node + 1 + "";
+                    String nodeJ = nod + 1 + "";
+                    visualizer.addNode(nodeI);
+                    visualizer.addNode(nodeJ);
+                    visualizer.addEdge(nodeI.concat(nodeJ), nodeI, nodeJ, false);
                 }
             }
         }
         visualizer.nodes().forEach(x -> x.setAttribute("label", x.getId()));
         List<Edge> listEdges = visualizer.edges().toList();
         for (Edge listEdge : listEdges) {
-            listEdge.setAttribute("label", (int) data[Integer.parseInt(listEdge.getNode0().getId().split(" ")[2]) - 1][Integer.parseInt(listEdge.getNode1().getId().split(" ")[2]) - 1]);
+            int edgeId = Integer.parseInt(listEdge.getNode0().getId().split("->")[0]) - 1;
+            int nodeId = Integer.parseInt(listEdge.getNode1().getId().split("->")[0]) - 1;
+            listEdge.setAttribute("label", data[edgeId][nodeId]);
         }
         System.setProperty("org.graphstream.ui", "swing");
         visualizer.display();
