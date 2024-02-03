@@ -39,7 +39,7 @@ First function cares only about the initial investments of the path $P$. On the 
 
 # Neumarical Cyber Attack Graph Example
 
-![attack graph](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/8f087bc8-24a1-4224-b990-126f7bfcc83b)
+![Picture2](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/dff5fa6d-844b-47f4-a551-a8a872caa385)
 
 # Time Complexity of GeniGraph with the Respect to Number of Nodes and Edges Respictively
 
