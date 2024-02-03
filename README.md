@@ -35,7 +35,7 @@ First function cares only about the initial investments of the path $P$. On the 
 
 # Cyber Attack Graph Example with Assets and Entry Nodes With Three Defenders to Allocate Resourcess
 
-![General_interdependent_network_legend](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/e0eda941-decf-4d34-b3aa-cd9073e06dc7)
+![Picture1](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/870f2bf3-ed09-47be-bcaf-c122c8ea6cbf)
 
 # Neumarical Cyber Attack Graph Example
 
