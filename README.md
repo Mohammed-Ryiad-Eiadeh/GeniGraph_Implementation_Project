@@ -37,16 +37,6 @@ First function cares only about the initial investments of the path $P$. On the 
 
 ![Picture1](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/870f2bf3-ed09-47be-bcaf-c122c8ea6cbf)
 
-# Neumarical Cyber Attack Graph Example
-
-![Picture2](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/dff5fa6d-844b-47f4-a551-a8a872caa385)
-
-# Time Complexity of GeniGraph with the Respect to Number of Nodes and Edges Respictively
-
-![NodeCurve](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/c8578c86-c4c5-44cb-9bd8-8544b25f3ebd)
-
-![EdgeCurve](https://github.com/Mohammed-Ryiad-Eiadeh/GeniGraph_Implementation_Project/assets/93108547/02044938-0c1a-4ac5-8328-305c67493934)
-
 As the number of nodes or edges increases, we notice that the actual run-time remains relatively quick. It doesn’t display a pattern of exponential growth. The lines representing the two fitness functions, rational-𝐹1 and rational-𝐹2, in the figures do not exhibit the sharp curve usually associated with exponential growth. In fact, rational-𝐹1 shows superior performance with a slightly curved line, while rational-𝐹2 is nearly linear. This suggests that the run-time of GeniGraph grows at a rate that is not exponential.
 
 
