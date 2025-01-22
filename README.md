@@ -202,10 +202,12 @@ here we have two project where first one utilizes the first fitness function and
 15) [15] Jianping Zeng, Shuang Wu, Yanyu Chen, Rui Zeng, and Chengrong Wu. 2019. Survey of Attack Graph Analysis Methods from the Perspective of Data and Knowledge Processing. Security and Communication Networks 2019 (2019). https: //doi.org/10.1155/2019/2031063.
 16) [16] Ryan A. Rossi and Nesreen K. Ahmed. 2015. The Network Data Repository with Interactive Graph Analytics and Visualization. In Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence. http://networkrepository.com.
 
-# Contact With The Developer
+# Contact With The Authors
 
-Send email to the following developer for any question about this work, and it is my pleasure to ansawer your question.
+Send email to the following Authors for any question about this work, and it is our pleasure to ansawer your question.
 
-Mohammad Aleiadeh, mraleiad@iu.edu or maleiade@purdue.edu
+Mohammad Aleiadeh, maleiade@purdue.edu
+
+Mustafa Abdallah, abdalla0@purdue.edu
 
 
