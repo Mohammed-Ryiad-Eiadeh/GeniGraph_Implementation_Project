@@ -1,6 +1,6 @@
 # GeniGraph_Project
 
-# Paper Link: https://scholar.google.com/citations?view_op=view_citation&hl=ar&user=wJkf_QgAAAAJ&citation_for_view=wJkf_QgAAAAJ:IjCSPb-OGe4C
+# Paper Link: [https://scholar.google.com/citations?view_op=view_citation&hl=ar&user=wJkf_QgAAAAJ&citation_for_view=wJkf_QgAAAAJ:IjCSPb-OGe4C](https://www.sciencedirect.com/science/article/abs/pii/S016740482400230X)
 
 # Paper Tiltle: "GeniGraph: Genetic-based Novel Security Resource Allocation Methods for Interdependent Systems Modeled by Attack Graphs"
 
