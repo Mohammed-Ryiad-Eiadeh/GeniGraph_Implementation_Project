@@ -36,7 +36,16 @@ public class MainFirstMB_Fitness2 {
         var FFun = new FitnessFunction_2(AdjMat, assetsLossValues);
         System.out.println(FFun.evaluateAllSolution(population));
 
-        // Creat object from GA to optimize the intial paths
+            
+    /**
+     * Note: Although crossover was included in the published methodology,
+     * it has been removed because, in the original implementation, it did
+     * not update the population under the implemented conditions.
+     * Consequently, crossover introduced unnecessary computational overhead
+     * without contributing to the evolutionary process. Its removal preserves
+     * the effective optimization behavior and maintains consistency with
+     * the published experimental results.
+     */
         var engin = new GeneticAlgorithm(AdjMat,
                 population,
                 0.2,
